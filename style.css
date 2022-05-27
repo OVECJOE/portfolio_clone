@@ -1,0 +1,371 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Poppins', 'PT Sans Narrow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    padding: 1rem 5rem 1.5rem;
+    font-size: .8rem;
+    position: relative;
+}
+
+.green-beauty {
+    position: absolute;
+    width: 250px;
+    height: 400px;
+    background-color: #a3cb38;
+    z-index: -1;
+    top: 0;
+    right: 20%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar {
+    display: flex;
+    gap: 4rem;
+    width: 100%;
+    list-style: none;
+}
+
+.nav-item a {
+    color: #000;
+    text-decoration: none;
+    font-weight: 450;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.hero-container {
+    padding: 5rem 4rem;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: .3rem;
+}
+
+.hero-text {
+    align-self: center;
+    width: 50%;
+}
+
+.hero-text h2 {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0;
+}
+
+.hero-text p {
+    margin: .1rem .1rem 1rem;
+    font-size: .85rem;
+}
+
+.hero-text button {
+    background-color: #a3cb38;
+    border: none;
+    border-radius: 3px;
+    padding: .5rem 1.1rem;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 300ms ease-out;
+}
+
+.hero-text button:hover {
+    background-color: #7b9c21;
+    transition: all 300ms ease-in;
+}
+
+.hero-img {
+    align-self: flex-end;
+}
+
+.hero-img img {
+    width: 350px;
+}
+
+.main-hustle-container {
+    display: flex;
+    background-image: url(./assets/bg.png);
+    background-position: top left;
+    background-repeat: no-repeat;
+    background-size: 250px 150px;
+    align-items: flex-start;
+    gap: 4rem;
+    margin-bottom: 1rem;
+}
+
+.main-hustle-container .header {
+    font-size: 2.5rem;
+    width: 20%;
+    align-self: flex-start;
+    margin: 0;
+    padding: 0 5rem;
+}
+
+.main-hustle-container .header h1 {
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-weight: 600;
+}
+
+.main-hustle-container .body {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+}
+
+.main-hustle-container .body .hustle-item {
+    display: flex;
+    flex-direction: column;
+    gap: .3rem;
+    width: 60%;
+}
+
+.hustle-item * {
+    margin: 0;
+    padding: 0;
+}
+
+.hustle-item .hustle-title {
+    color: #a3cb38;
+    font-weight: 550;
+}
+
+.hustle-item .hustle-desc {
+    font-size: x-small;
+}
+
+.work-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 0 0 1.5rem;
+}
+
+.project-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 3rem;
+    gap: 3rem;
+    align-items: center;
+}
+
+.project-container * {
+    margin: 0;
+    padding: 0;
+}
+
+.project-container .work-title {
+    font-size: 2rem;
+    font-weight: 550;
+}
+
+.project-container > blockquote {
+    width: 50%;
+    text-align: center;
+    font-size: .75em;
+}
+
+.project-container .projects {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem 7rem;
+    padding: 0 7rem;
+    justify-content: space-around;
+}
+
+.projects .project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    gap: .1rem;
+}
+
+.project .screenshot {
+    width: 120px;
+    height: 120px;
+
+}
+
+.project .green-badge {
+    position: absolute;
+    width: 20px;
+    height: 30px;
+    top: -.5rem;
+    left: .6rem;
+    background-color: #a3cb38;
+    border-radius: 1px;
+}
+
+.project .project-title {
+    font-size: .85rem;
+    font-weight: 700;
+}
+
+.project .project-desc {
+    font-size: .7rem;
+    font-weight: 550;
+}
+
+.project .project-link {
+    color: #a3cb38;
+    text-transform: uppercase;
+    font-size: .85rem;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.proud-of-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 0 5rem 3rem;
+}
+
+.proud-ofs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    gap: 4rem 2rem;
+}
+
+.proud-ofs div {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.proud-ofs div * {
+    padding: 0;
+    margin: 0;
+}
+
+.proud-ofs div .green-line {
+    position: absolute;
+    width: 18px;
+    height: 2px;
+    background-color: #a3cb38;
+}
+
+.proud-ofs div > p {
+    font-size: .8rem;
+}
+
+.proud-of-title {
+    background-color: #a3cb38;
+    width: 200px;
+    /* height: 250px; */
+    align-self: center;
+    padding: 1rem 2rem;
+    margin-right: .3rem;
+    border-radius: 1px;
+}
+
+.proud-of-title h1 {
+    font-size: 3rem;
+    color: #fff;
+    line-height: 3rem;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: space-between;
+    padding: .7rem 4rem 2rem;
+}
+
+.hobbies-text {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-self: center;
+}
+
+.hobbies-text > * {
+    margin: 0;
+    padding: 0;
+}
+
+.hobbies-text h1 {
+    font-size: 3.2rem;
+    font-weight: 600;
+    color: #a3cb38;
+    line-height: 3.3rem;
+    width: 25%;
+}
+
+.hobbies-text p {
+    font-size: .7rem;
+}
+
+.hobbies-container .hobbies-photos {
+    display: flex;
+}
+
+.hobbies-photos div:first-child > img {
+    width: 200px;
+}
+
+.hobbies-photos div:first-child,
+.hobbies-photos div:last-child {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+}
+
+.hobbies-photos div:last-child > img {
+    width: 150px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 4rem 0 0;
+}
+
+.contact-container > div {
+    display: flex;
+    flex-direction: column;
+    background-color: #a3cb38;
+    justify-content: center;
+    padding: 3rem;
+    width: 250px;
+    border-radius: 1px;
+}
+
+.contact-container > div > * {
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+.contact-container > div > h1 {
+    font-size: 2.2rem;
+    font-weight: 600;
+}
+
+.contact-container img {
+    width: 15px;
+    height: 15px;
+}
+
+.contact-container > p {
+    align-self: flex-end;
+}
+
+.contact-container a {
+    font-size: .7rem;
+}
